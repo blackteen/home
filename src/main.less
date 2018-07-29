@@ -1,4 +1,6 @@
 @import "fonts.css";
+@import "normalize.css";
+@import "slick";
 
 @violet: #86466f;
 
@@ -14,6 +16,7 @@ body{
     font-family: "Montserrat";
 }
 
+
 .hidden{
     display: none;
 }
@@ -21,6 +24,7 @@ body{
 .container{
     width: 100%;
     max-width: 1200px;
+    padding: 0 12.5px;
     .auto()
 }
 
@@ -35,13 +39,13 @@ body{
 
 #warn{
     background: #193f67;
-    padding: 11px;
+    padding: 9px 0;
     p{
         color: #fff;
         margin:0;
         text-align: center;
         text-transform: uppercase;
-        font-size: 1.12em;
+        font-size: 1.16em;
     }
 }
 
@@ -49,14 +53,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4.7em;
+    height: 4.9em;
     #logo{
         margin-bottom: -1em;
     }
     #user{
         display: inherit;
         div{
-            margin: 0 2em;
+            margin: 0 1.66em;
             &:last-child{
                 margin-right: 0;
             }
@@ -65,20 +69,25 @@ body{
             font-size: .85em;
             color: #5a5a5a;
             text-decoration: none;
+            span{
+                color: #49b9ca;
+                font-weight: 700;
+            }
         }
     }
     #search{
         flex-grow: 1;
         text-align: right;
         input{
-            border:1px solid #e7e7e7;
+            border: 1px solid #e7e7e7;
             border-radius: 0.65em;
             font-weight: 200;
             color: #a2a2a2;
-            font-size: .85em;
-            max-width: 29em;
+            font-size: 0.85em;
+            max-width: 34.4em;
             width: 100%;
-            padding:1em;
+            padding: 1em 1.9em;
+            margin-right: 2.6em
         }
     }
 }
@@ -87,22 +96,102 @@ body{
     width: 100%;
     max-width: 1275px;
     display: flex;
-    margin: auto;
+    margin:3px auto 20px;
     ul{
         display: inherit;
         max-width: inherit;
         margin: 0 auto;
         padding: 0;
-        justify-content: space-around;
+        justify-content:space-between;
         list-style: none;
         width: 100%;
         a{
             text-transform: uppercase;
             text-decoration: none;
             color: #3b3b3b;
+            font-size: 1.1em;
         }
     }
 }
 
+.carousel{
+    .slick-slide{
+        height: 550px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        article{
+            width: 400px;
+            background: url(../img/yellow.jpg);
+            height: 100%;
+            position: absolute;
+            right: 10%;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 25px;
+            box-sizing: border-box;
+            color: #fff;
+            h2{
+                font-family: "Lora";
+                font-style: italic;
+                font-weight: 100;
+                font-size: 2.5em;
+                b{
+                    font-weight: 600;
+                }
+            }
+            p{
+                &:first-child{
+                    text-transform: uppercase;
+                    font-size: 1.1em;
+                    letter-spacing: 2.2px;
+                }
+                &:last-child{
+                    font-size: 1.2em;
+                    font-weight: 200;
+                }
+               
+            }
+        }
+    }
+}
+
+.shop-item{
+    display: flex;
+    &.column{
+        flex-direction: column;
+        &.revers{
+            section{
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    &.row{
+        flex-direction: row;
+        justify-content: space-between;
+        &.three{
+            section{
+                flex-basis: 32%;
+            }
+        }
+        section{
+            flex-basis: 49%;
+            flex-wrap: wrap;
+        }
+    }
+    section{
+        display: inherit;
+        width: 100%;
+        & > * {
+            width: 100%;
+        }
+    }
+   
+}
 
 

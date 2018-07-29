@@ -8,6 +8,10 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+*{
+  box-sizing: border-box;
+}
+
  figure{
    margin:0;
  }
