@@ -1,0 +1,90 @@
+@import "fonts.css";
+body {
+  font-family: "Montserrat";
+}
+.hidden {
+  display: none;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container-full {
+  width: 100%;
+  max-width: 1520px;
+  margin: auto;
+}
+@media (max-width: 1366px) {
+  .container-full {
+    max-width: 1300px;
+  }
+}
+#warn {
+  background: #193f67;
+  padding: 11px;
+}
+#warn p {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.12em;
+}
+#headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.7em;
+}
+#headerContent #logo {
+  margin-bottom: -1em;
+}
+#headerContent #user {
+  display: inherit;
+}
+#headerContent #user div {
+  margin: 0 2em;
+}
+#headerContent #user div:last-child {
+  margin-right: 0;
+}
+#headerContent #user a {
+  font-size: 0.85em;
+  color: #5a5a5a;
+  text-decoration: none;
+}
+#headerContent #search {
+  flex-grow: 1;
+  text-align: right;
+}
+#headerContent #search input {
+  border: 1px solid #e7e7e7;
+  border-radius: 0.65em;
+  font-weight: 200;
+  color: #a2a2a2;
+  font-size: 0.85em;
+  max-width: 29em;
+  width: 100%;
+  padding: 1em;
+}
+#nav {
+  width: 100%;
+  max-width: 1275px;
+  display: flex;
+  margin: auto;
+}
+#nav ul {
+  display: inherit;
+  max-width: inherit;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+}
+#nav ul a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3b3b3b;
+}
