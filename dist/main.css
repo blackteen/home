@@ -212,6 +212,15 @@ body {
   font-style: italic;
   font-weight: 100;
   font-size: 2.5em;
+  margin-bottom: 0;
+}
+.carousel .slick-slide article h2:after {
+  content: "";
+  width: 3em;
+  background: #fff;
+  height: 2px;
+  display: block;
+  margin: 1em auto 0.5em;
 }
 .carousel .slick-slide article h2 b {
   font-weight: 600;
@@ -229,37 +238,172 @@ body {
   font-family: "Lora";
   font-style: italic;
   font-weight: 100;
+  text-align: center;
+  font-size: 2.3em;
 }
-.shop-item {
+#shop {
+  padding-top: 5em;
+}
+#shop .shop-item {
   display: flex;
+  margin-bottom: 3.5em;
 }
-.shop-item.column {
+#shop .shop-item.column {
   flex-direction: column;
 }
-.shop-item.column.revers section {
+#shop .shop-item.column.revers section {
   flex-direction: row-reverse;
 }
-.shop-item.row {
+#shop .shop-item.row {
   flex-direction: row;
   justify-content: space-between;
 }
-.shop-item.row.three section {
+#shop .shop-item.row.three section {
   flex-basis: 32%;
 }
-.shop-item.row section {
+#shop .shop-item.row section {
   flex-basis: 49%;
   flex-wrap: wrap;
 }
-.shop-item section {
+#shop .shop-item section {
   display: inherit;
   width: 100%;
 }
-.shop-item section > * {
+#shop .shop-item section > * {
   width: 100%;
 }
-.shop-item section article {
+#shop .shop-item section article {
   display: inherit;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+#shop .shop-item section article h3 {
+  margin-top: 1em;
+}
+#shop .shop-item section article > * {
+  margin: 0;
+}
+#shop .shop-item section article h3 {
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  margin-bottom: 1em;
+}
+#shop .shop-item section article p:not([class]) {
+  font-weight: 200;
+}
+#shop .shop-item section article p:not([class]):after {
+  content: "";
+  width: 6em;
+  background: #dedede;
+  height: 2px;
+  display: block;
+  margin: 1em auto;
+}
+#shop .shop-item section article p:not([class]) b {
+  font-weight: 600;
+}
+#shop .shop-item section article .violet {
+  color: #86466f;
+}
+#subscribe {
+  padding: 3em 0;
+}
+#subscribe .wrapper {
+  background-color: #86466f;
+  padding: 0.5em;
+}
+#subscribe .wrapper article {
+  padding: 2em 1.5em;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+}
+#subscribe .wrapper article section:first-child {
+  flex-grow: 1;
+}
+#subscribe .wrapper article section:last-child {
+  flex-grow: 1;
+}
+#subscribe .wrapper article p,
+#subscribe .wrapper article h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+#subscribe .wrapper article p {
+  font-size: 1.3em;
+  font-family: "Lora";
+  font-style: italic;
+}
+#subscribe .wrapper article h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  transform: translateX(2.2em) translateY(0.2em);
+  display: inline-block;
+}
+#subscribe .wrapper #subscribeInput {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+#subscribe .wrapper #subscribeInput input[type="email"] {
+  border: none;
+  width: 100%;
+  padding: 1.3em;
+  font-size: 0.85em;
+}
+#subscribe .wrapper #subscribeInput input[type="submit"] {
+  position: absolute;
+  top: 9.1%;
+  right: 0.9%;
+  height: 2.8em;
+  border-radius: 10px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  padding: 0 2em;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+#dooble {
+  padding: 4em 0 3em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#dooble article {
+  position: absolute;
+  height: 260px;
+  width: 670px;
+  background: rgba(255, 255, 255, 0.7);
+  display: inherit;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+#dooble article h3 {
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  margin-bottom: 1em;
+}
+#dooble article h2 {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 100;
+  font-size: 2em;
+}
+#dooble figure {
+  width: 49%;
+}
+#dooble figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
