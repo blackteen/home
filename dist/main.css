@@ -225,6 +225,11 @@ body {
   font-size: 1.2em;
   font-weight: 200;
 }
+.section-header {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 100;
+}
 .shop-item {
   display: flex;
 }
@@ -251,4 +256,10 @@ body {
 }
 .shop-item section > * {
   width: 100%;
+}
+.shop-item section article {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
