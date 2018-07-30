@@ -234,6 +234,9 @@ body {
   font-size: 1.2em;
   font-weight: 200;
 }
+.carousel .slick-slide article p a {
+  color: #fff;
+}
 .section-header {
   font-family: "Lora";
   font-style: italic;
@@ -273,6 +276,7 @@ body {
   width: 100%;
 }
 #shop .shop-item section article {
+  color: #353535;
   display: inherit;
   flex-direction: column;
   align-items: center;
@@ -352,6 +356,9 @@ body {
   overflow: hidden;
   position: relative;
 }
+#subscribe .wrapper #subscribeInput input[type="submit"] {
+  background: #111;
+}
 #subscribe .wrapper #subscribeInput input[type="email"] {
   border: none;
   width: 100%;
@@ -365,7 +372,6 @@ body {
   height: 2.8em;
   border-radius: 10px;
   border: none;
-  background: #111;
   color: #fff;
   font-family: Montserrat;
   text-transform: uppercase;
@@ -384,13 +390,14 @@ body {
   left: 50%;
   position: absolute;
   height: 16.25em;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   transform: translateY(-50%) translateX(-50%);
   top: 50%;
+  color: #353535;
 }
 #dooble figcaption h3 {
   text-transform: uppercase;
@@ -419,13 +426,14 @@ body {
   left: 28%;
   position: absolute;
   height: 16.25em;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   transform: translateY(-50%) translateX(-50%);
   top: 50%;
+  color: #353535;
 }
 #blog figcaption h3 {
   text-transform: uppercase;
@@ -460,4 +468,159 @@ body {
   color: #565656;
   font-size: 1em;
   line-height: 1.625em;
+}
+#offer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6.2em;
+}
+#offer figure {
+  height: 15em;
+  position: relative;
+  width: 49%;
+}
+#offer figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2.5em;
+}
+#offer figure figcaption.left {
+  padding-top: 2.5em;
+  text-align: right;
+}
+#offer figure figcaption.right {
+  padding-top: 6.25em;
+}
+#offer figure figcaption h2 {
+  font-size: 3.125em;
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 100;
+  margin: 0;
+}
+#offer figure figcaption p {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer #topLine {
+  padding: 4.6em 0 5.6em;
+  background-color: #fbfbfa;
+}
+footer #bottomLine {
+  background-color: #fff;
+  padding: 1.6em 0;
+}
+footer #bottomLine article {
+  display: flex;
+}
+footer #bottomLine p {
+  font-size: 0.75em;
+  font-weight: 200;
+  color: #606060;
+  margin: 0 2em 0 0;
+}
+footer #bottomLine p a {
+  color: #606060;
+  text-decoration: none;
+}
+footer #topLine h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.3em;
+  font-weight: 400;
+}
+footer #topLine article {
+  display: flex;
+  justify-content: space-between;
+}
+footer #topLine h3 {
+  font-size: 1.2em;
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 100;
+}
+footer #topLine ul li {
+  margin-bottom: 1em;
+}
+footer #topLine ul li a {
+  color: #565656;
+  font-size: 0.87em;
+  text-decoration: none;
+  font-weight: 200;
+}
+footer #subscribeInput2 {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+footer #subscribeInput2 input[type="submit"] {
+  background: #49b9ca;
+}
+footer #subscribeInput2 input[type="email"] {
+  border: none;
+  width: 100%;
+  padding: 1.3em;
+  font-size: 0.85em;
+}
+footer #subscribeInput2 input[type="submit"] {
+  position: absolute;
+  top: 9.1%;
+  right: 0.9%;
+  height: 2.8em;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  padding: 0 2em;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 7.3em;
+}
+.social i {
+  font-size: 1.5em;
+  color: #86466f;
+}
+.link a {
+  color: #353535;
+  text-decoration: none;
+}
+.link a i {
+  vertical-align: bottom;
+  margin-left: 0.3em;
+}
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  transform: translatey(-45px);
+}
+.slick-dots li {
+  margin: 0 3px;
+}
+.slick-dots li.slick-active button {
+  background: #71706f;
+}
+.slick-dots li button {
+  font-size: 0;
+  background: #111;
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  padding: 0;
 }

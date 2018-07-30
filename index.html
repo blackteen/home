@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="dist/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <title>iwd</title>
 </head>
 
-<body style="height: 10000px;">
+<body>
   <header>
     <section id="warn">
       <p>All Fall DECOR 50% Off! Start shopping now!</p>
@@ -63,7 +64,7 @@
                       home this spring 
                       with <b>20% off</b> 
                       all items.</h2>
-                     <p>Start Shopping<i></i></p> 
+                     <p class="link"><a href="">Start Shopping<i class="fas fa-angle-right"></i></a></p> 
                 </article>
             </div>
             <div style="background-image: url(img/c1.jpg)">
@@ -73,7 +74,7 @@
                     home this spring 
                     with <b>20% off</b> 
                     all items.</h2>
-                   <p>Start Shopping<i></i></p> 
+                   <p class="link"><a href="">Start Shopping<i class="fas fa-angle-right"></i></a></p> 
               </article>
           </div>
             <div style="background-image: url(img/c1.jpg)">
@@ -83,7 +84,7 @@
                     home this spring 
                     with <b>20% off</b> 
                     all items.</h2>
-                   <p>Start Shopping<i></i></p> 
+                   <p class="link"><a href="">Start Shopping<i class="fas fa-angle-right"></i></a></p> 
               </article>
           </div>
         </div>
@@ -194,7 +195,7 @@
       <figcaption>
         <h3>on a budget?</h3>
         <h2>Don’t settle on style or quality</h2>
-        <p>Explore items on sale<i></i></p>
+        <p class="link"><a href="">Explore items on sale<i class="fas fa-angle-right"></i></a></p>
       </figcaption>
       <figure>
           <img src="img/b2.jpg">
@@ -208,7 +209,7 @@
                   <figcaption>
                     <h3>Our Blog</h3>
                     <h2>Latest design trends</h2>
-                    <p>Read Post<i></i></p>
+                    <p class="link"><a href="">Read Post<i class="fas fa-angle-right"></i></a></p>
                   </figcaption>
               </figure>
           </section>
@@ -232,9 +233,87 @@
           </section>
       </article>
     </section>
-    <section id="offer"></section>  
+    <section id="offer" class="container">
+        <figure>
+            <img src="img/o1.jpg">
+            <figcaption class="right">
+              <h2>Enter to win!</h2>
+              <p>One lucky winner will receive a bedroom set of their choice<br> from Basset.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="img/o2.jpg">
+          <figcaption class="left">
+              <h2>Johnson City Remodel!</h2>
+              <p>20% off all select floor samples + an<br> extra 10% off all purchases.</p>
+          </figcaption>
+      </figure>
+    </section>  
   </main>
-  <footer></footer>
+  <footer>
+      <section id="topLine">
+            <article class="container">
+                <section class="">
+                  <h2>Company Info</h2>
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Our Coke Tradition</a></li>
+                    <li><a href="">Community Involvement</a></li>
+                    <li><a href="">Customer Reviews</a></li>
+                    <li><a href="">The Grand Difference</a></li>
+                  </ul>
+                </section>
+                <section class="">
+                  <h2>Customer </h2>
+                  <ul>
+                      <li><a href="">My Account</a></li>
+                      <li><a href="">Customer Service</a></li>
+                      <li><a href="">Delivery & Pickup</a></li>
+                      <li><a href="">Furniture Care</a></li>
+                      <li><a href="">Financing Opitons</a></li>
+                      <li><a href="">ZEEZ</a></li>
+                  </ul>
+                </section>
+                <section class="">
+                  <h2>Store</h2>
+                  <ul>
+                      <li><a href="">Store Locations</a></li>
+                      <li><a href="">Weekly Ad</a></li>
+                      <li><a href="">Special Offers</a></li>
+                      <li><a href="">Grand Outlets</a></li>
+                      <li><a href="">Grand Sleep Center</a></li>
+                  </ul>
+                </section>
+                <section class="">
+                    <h2>Get Social</h2>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                    <h3>Sign up and save 10% off your first order!</h3>
+                    <section class="">
+                        <form action="">
+                            <div id="subscribeInput2">
+                              <input type="email" placeholder="Enter Email Address">
+                              <input type="submit" value="submit">
+                            </div>
+                        </form>
+                    </section>
+                </section>
+            </article>
+      </section>
+      <section id="bottomLine">
+            <article class="container">
+              <p>Copyright © 2018 Grand Home Furnishings</p>              
+              <p><a href="">Terms of Use</a></p>              
+              <p><a href="">Site Map</a></p>              
+              <p><a href="">Privacy Policy</a></p>
+            </article>
+      </section>
+  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
