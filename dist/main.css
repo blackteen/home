@@ -305,6 +305,10 @@ body {
 }
 #shop .shop-item section article .violet {
   color: #86466f;
+  text-decoration: none;
+}
+#shop .shop-item section article .violet:focus {
+  color: #86466f;
 }
 #subscribe {
   padding: 3em 0;
@@ -375,25 +379,25 @@ body {
   display: flex;
   justify-content: space-between;
 }
-#dooble article {
+#dooble figcaption {
+  width: 41.875em;
+  left: 50%;
   position: absolute;
-  height: 260px;
-  width: 670px;
+  height: 16.25em;
   background: rgba(255, 255, 255, 0.7);
-  display: inherit;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   transform: translateY(-50%) translateX(-50%);
   top: 50%;
-  left: 50%;
 }
-#dooble article h3 {
+#dooble figcaption h3 {
   text-transform: uppercase;
   letter-spacing: 2.2px;
   margin-bottom: 1em;
 }
-#dooble article h2 {
+#dooble figcaption h2 {
   font-family: "Lora";
   font-style: italic;
   font-weight: 100;
@@ -406,4 +410,54 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+#blog figure {
+  position: relative;
+}
+#blog figcaption {
+  width: 29.688em;
+  left: 28%;
+  position: absolute;
+  height: 16.25em;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+}
+#blog figcaption h3 {
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  margin-bottom: 1em;
+}
+#blog figcaption h2 {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 100;
+  font-size: 2em;
+}
+#blog .bottom-blog {
+  display: flex;
+}
+#blog .bottom-blog article {
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+  padding: 5em 1.5em 0;
+  height: 25em;
+}
+#blog .bottom-blog article h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #353535;
+  font-size: 1.25em;
+  letter-spacing: 2.2px;
+}
+#blog .bottom-blog article p {
+  font-weight: 200;
+  color: #565656;
+  font-size: 1em;
+  line-height: 1.625em;
 }
