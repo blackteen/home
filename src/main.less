@@ -277,6 +277,7 @@ body{
         &.row{
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: wrap;
             &.three{
                 section{
                     flex-basis: 32%;
@@ -285,6 +286,16 @@ body{
             section{
                 flex-basis: 49%;
                 flex-wrap: wrap;
+                &.section-full{
+                    flex-basis: 100%;
+                    margin-bottom: 3.5em;
+                    figure{
+                        width: 75%;
+                    }
+                    article{
+                        width: 25%;
+                    }
+                }
             }
         }
         section{
