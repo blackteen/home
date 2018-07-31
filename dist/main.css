@@ -121,6 +121,11 @@ body {
   text-transform: uppercase;
   font-size: 1.16em;
 }
+@media (max-width: 600px) {
+  #warn p {
+    font-size: 0.76em;
+  }
+}
 #headerContent {
   display: flex;
   justify-content: space-between;
@@ -197,6 +202,11 @@ body {
     margin: 0 0.5em;
   }
 }
+@media (max-width: 500px) {
+  #headerContent #search input {
+    margin: 0;
+  }
+}
 #nav {
   width: 100%;
   max-width: 1275px;
@@ -215,7 +225,9 @@ body {
 }
 @media (max-width: 1024px) {
   #nav.opened ul {
-    display: block;
+    justify-content: end;
+    height: 250px;
+    opacity: 1;
   }
 }
 #nav ul {
@@ -226,11 +238,18 @@ body {
   justify-content: space-between;
   list-style: none;
   width: 100%;
+  transition: 0.5s;
+  transition-property: height, opacity;
 }
 @media (max-width: 1024px) {
   #nav ul {
+    margin-top: 0.5em;
     flex-direction: column;
-    display: none;
+    height: 0;
+    opacity: 0;
+  }
+  #nav ul li {
+    margin-bottom: 0.3em;
   }
 }
 #nav ul a {
@@ -328,6 +347,9 @@ body {
   flex-wrap: wrap;
   margin-bottom: 3.5em;
 }
+#shop .shop-item.row section figure {
+  overflow: hidden;
+}
 @media (max-width: 1200px) {
   #shop .shop-item.row section figure {
     width: 100%;
@@ -338,6 +360,12 @@ body {
   width: inherit;
   height: inherit;
   display: inherit;
+}
+#shop .shop-item.row section figure img {
+  transition: 0.5s;
+}
+#shop .shop-item.row section figure:hover img {
+  transform: scale(1.1);
 }
 #shop .shop-item.row section.section-full {
   flex-basis: 100%;
@@ -439,12 +467,21 @@ body {
 #shop .shop-item section article .violet {
   color: #86466f;
   text-decoration: none;
+  transition: 0.5s;
 }
 #shop .shop-item section article .violet:focus {
   color: #86466f;
 }
+#shop .shop-item section article .violet:hover {
+  color: #ccc;
+}
 #subscribe {
   padding: 3em 0;
+}
+@media (max-width: 991px) {
+  #subscribe {
+    padding: 0 0 2em;
+  }
 }
 #subscribe .wrapper {
   background-color: #86466f;
@@ -512,6 +549,9 @@ body {
 #subscribe .wrapper #subscribeInput input[type="submit"] {
   background: #111;
 }
+#subscribe .wrapper #subscribeInput input[type="submit"]:hover {
+  background: #49b9ca;
+}
 #subscribe .wrapper #subscribeInput input[type="email"] {
   border: none;
   width: 100%;
@@ -519,6 +559,7 @@ body {
   font-size: 0.85em;
 }
 #subscribe .wrapper #subscribeInput input[type="submit"] {
+  transition: 0.5s;
   position: absolute;
   top: 9.1%;
   right: 0.9%;
@@ -729,6 +770,11 @@ footer #topLine {
   padding: 4.6em 0 5.6em;
   background-color: #fbfbfa;
 }
+@media (max-width: 900px) {
+  footer #topLine {
+    padding: 3em 0 3em;
+  }
+}
 footer #bottomLine {
   background-color: #fff;
   padding: 1.6em 0;
@@ -737,11 +783,21 @@ footer #bottomLine article {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 900px) {
+  footer #bottomLine article {
+    justify-content: center;
+  }
+}
 footer #bottomLine p {
   font-size: 0.75em;
   font-weight: 200;
   color: #606060;
   margin: 0 2em 0 0;
+}
+@media (max-width: 900px) {
+  footer #bottomLine p {
+    margin: 0.4em 0em 0 0;
+  }
 }
 footer #bottomLine p a {
   color: #606060;
@@ -758,6 +814,18 @@ footer #topLine article {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 900px) {
+  footer #topLine .last {
+    width: 100%;
+  }
+  footer #topLine .last h3 {
+    text-align: center;
+  }
+  footer #topLine .last section {
+    max-width: 30em;
+    margin: auto;
+  }
+}
 footer #topLine h3 {
   font-size: 1.2em;
   font-family: "Lora";
@@ -772,6 +840,10 @@ footer #topLine ul li a {
   font-size: 0.87em;
   text-decoration: none;
   font-weight: 200;
+  transition: 0.5s;
+}
+footer #topLine ul li a:hover {
+  color: #86466f;
 }
 footer #subscribeInput2 {
   background: #fff;
@@ -782,6 +854,9 @@ footer #subscribeInput2 {
 footer #subscribeInput2 input[type="submit"] {
   background: #49b9ca;
 }
+footer #subscribeInput2 input[type="submit"]:hover {
+  background: black;
+}
 footer #subscribeInput2 input[type="email"] {
   border: none;
   width: 100%;
@@ -789,6 +864,7 @@ footer #subscribeInput2 input[type="email"] {
   font-size: 0.85em;
 }
 footer #subscribeInput2 input[type="submit"] {
+  transition: 0.5s;
   position: absolute;
   top: 9.1%;
   right: 0.9%;
@@ -808,8 +884,12 @@ footer #subscribeInput2 input[type="submit"] {
   width: 7.3em;
 }
 .social i {
+  transition: 0.5s;
   font-size: 1.5em;
   color: #86466f;
+}
+.social i:hover {
+  color: #ccc;
 }
 .link a {
   color: #353535;
@@ -818,6 +898,10 @@ footer #subscribeInput2 input[type="submit"] {
 .link a i {
   vertical-align: bottom;
   margin-left: 0.3em;
+  transition: 0.5s;
+}
+.link a:hover i {
+  transform: translateX(0.2em);
 }
 .slick-dots {
   margin: 0;
